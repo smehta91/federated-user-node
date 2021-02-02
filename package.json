@@ -1,0 +1,12 @@
+{
+  "name": "federated-match-node",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "@apollo/federation": "^0.21.0",
+    "apollo-server": "^2.19.2",
+    "@apollo/gateway": "^0.22.0",
+    "graphql": "^15.5.0"
+  }
+}

@@ -1,0 +1,38 @@
+type Match {
+  # Needed to show round message
+  userMessage: String
+
+  id: Int!
+
+  # used to show the match name/number w.r.t the tour
+  matchDetail: String
+
+  # used to show if lineups have been announed, or related info
+  matchHighlight: MatchHighlight
+
+  startTime: Date!
+  updatedTime: Date! # need to find out how to resolve
+  status: MatchStatus!
+  tossResult: String
+
+  # Tells the match name for eg 'Ind vs Aus'
+  name: String!
+
+  # Tells that player image should be shown or not
+  showPlayerImages: Boolean!
+
+
+  # venue for the match
+  venue: String
+
+  # scores for all the squads in a match
+  elapsedTime: String!
+
+
+  # whether fantasy commentary is available or not
+  isFantasyCommentaryAvailable: Boolean
+
+
+  # display lineup batting order or not
+  displayLineupOrder: Boolean
+}
